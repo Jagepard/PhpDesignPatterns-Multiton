@@ -1,0 +1,9 @@
+#! usr/bin/env php
+<?php
+
+namespace AntiPatterns\Multiton;
+
+require_once 'vendor/autoload.php';
+
+print_r(FirstSingleton::getInstance());
+print_r(SecondSingleton::getInstance());

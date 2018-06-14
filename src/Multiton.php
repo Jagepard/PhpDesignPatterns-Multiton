@@ -1,16 +1,18 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 28.03.18
- * Time: 17:17
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace AntiPatterns\Multiton;
 
-
+/**
+ * Class Multiton
+ * @package AntiPatterns\Multiton
+ */
 class Multiton
 {
 
@@ -26,11 +28,11 @@ class Multiton
     {
         $that = get_called_class();
 
-        if (!array_key_exists($that, self::$instances)){
-            self::$instances[$that] = new self;
+        if (!array_key_exists($that, static::$instances)){
+            static::$instances[$that] = new static;
         }
 
-        return self::$instances[$that];
+        return static::$instances[$that];
     }
 
     public function __construct()

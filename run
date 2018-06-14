@@ -5,5 +5,4 @@ namespace AntiPatterns\Multiton;
 
 require_once 'vendor/autoload.php';
 
-print_r(FirstSingleton::getInstance());
-print_r(SecondSingleton::getInstance());
+print (FirstSingleton::getInstance() === SecondSingleton::getInstance()) ?: "Multiton \n";

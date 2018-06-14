@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 /**
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
-use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
+namespace AntiPatterns\Multiton\Tests;
+
 use AntiPatterns\Multiton\Multiton;
 use AntiPatterns\Multiton\FirstSingleton;
 use AntiPatterns\Multiton\SecondSingleton;
-
+use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 /**
  * Class MultitonTest
@@ -20,16 +20,10 @@ use AntiPatterns\Multiton\SecondSingleton;
 class MultitonTest extends PHPUnit_Framework_TestCase
 {
 
-    protected function setUp(): void
-    {
-
-    }
-
     public function testInstances()
     {
         $this->assertInstanceOf(Multiton::class, FirstSingleton::getInstance());
         $this->assertInstanceOf(Multiton::class, SecondSingleton::getInstance());
-        $this->assertSame(FirstSingleton::getInstance(), FirstSingleton::getInstance());
-        $this->assertSame(SecondSingleton::getInstance(), SecondSingleton::getInstance());
+        $this->assertNotSame(FirstSingleton::getInstance(), SecondSingleton::getInstance());
     }
 }

@@ -7,3 +7,5 @@
 
 # Multiton | [API](https://github.com/Jagepard/PhpDesignPatterns-Multiton/blob/master/docs.md "Documentation API")
 Мультитон
+
+![Multiton](https://github.com/Jagepard/PhpDesignPatterns-Multiton/blob/master/UML.png)

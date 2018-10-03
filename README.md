@@ -5,5 +5,5 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# Multiton
+# Multiton | [API](https://github.com/Jagepard/PhpDesignPatterns-Multiton/blob/master/docs.md "Documentation API")
 Мультитон

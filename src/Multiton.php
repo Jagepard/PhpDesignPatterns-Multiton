@@ -15,7 +15,6 @@ namespace AntiPatterns\Multiton;
  */
 class Multiton
 {
-
     /**
      * @var array
      */
@@ -29,12 +28,15 @@ class Multiton
         $that = get_called_class();
 
         if (!array_key_exists($that, static::$instances)){
-            static::$instances[$that] = new static;
+            static::$instances[$that] = new static();
         }
 
         return static::$instances[$that];
     }
 
+    /**
+     * Multiton constructor.
+     */
     public function __construct()
     {
     }

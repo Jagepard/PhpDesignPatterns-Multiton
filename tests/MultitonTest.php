@@ -16,7 +16,6 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class MultitonTest extends PHPUnit_Framework_TestCase
 {
-
     public function testInstances()
     {
         $this->assertInstanceOf(Multiton::class, FirstSingleton::getInstance());

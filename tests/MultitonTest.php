@@ -14,9 +14,6 @@ use AntiPatterns\Multiton\FirstSingleton;
 use AntiPatterns\Multiton\SecondSingleton;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class MultitonTest
- */
 class MultitonTest extends PHPUnit_Framework_TestCase
 {
 

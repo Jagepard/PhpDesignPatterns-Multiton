@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace AntiPatterns\Multiton;
 
-/**
- * Class Multiton
- * @package AntiPatterns\Multiton
- */
 class Multiton
 {
     /**

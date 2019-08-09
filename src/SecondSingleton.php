@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace AntiPatterns\Multiton;
 
-/**
- * Class SecondSingleton
- * @package AntiPatterns\Multiton
- */
 final class SecondSingleton extends Multiton
 {
 

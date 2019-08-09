@@ -6,6 +6,8 @@
 -----
 
 # Multiton | [API](https://github.com/Jagepard/PhpDesignPatterns-Multiton/blob/master/docs.md "Documentation API")
+```php run``` Запустить исполнение шаблона в терминале
+
 Мультитон
 
 ![Multiton](https://github.com/Jagepard/PhpDesignPatterns-Multiton/blob/master/UML.png)

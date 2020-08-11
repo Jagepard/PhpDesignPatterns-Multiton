@@ -11,14 +11,8 @@ namespace AntiPatterns\Multiton;
 
 class Multiton
 {
-    /**
-     * @var array
-     */
-    protected static $instances = [];
+    protected static array $instances = [];
 
-    /**
-     * @return Multiton
-     */
     public static function getInstance(): self
     {
         $that = get_called_class();
@@ -30,9 +24,6 @@ class Multiton
         return static::$instances[$that];
     }
 
-    /**
-     * Multiton constructor.
-     */
     public function __construct()
     {
     }

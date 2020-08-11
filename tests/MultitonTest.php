@@ -7,9 +7,7 @@
 
 namespace AntiPatterns\Multiton\Tests;
 
-use AntiPatterns\Multiton\Multiton;
-use AntiPatterns\Multiton\FirstSingleton;
-use AntiPatterns\Multiton\SecondSingleton;
+use AntiPatterns\Multiton\{Multiton, FirstSingleton, SecondSingleton};
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class MultitonTest extends PHPUnit_Framework_TestCase

@@ -9,5 +9,4 @@ namespace AntiPatterns\Multiton;
 
 final class SecondSingleton extends Multiton
 {
-
 }

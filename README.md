@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# Multiton | [API](https://github.com/Jagepard/PhpDesignPatterns-Multiton/blob/master/docs.md "Documentation API")
+# Multiton | [API](https://github.com/Jagepard/PhpDesignPatterns-Multiton/blob/master/api.md "Documentation API")
 ```php main.php``` execute in terminal
 
 ## Result:

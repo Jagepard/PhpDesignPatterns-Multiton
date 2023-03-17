@@ -13,6 +13,13 @@ class Multiton
 {
     protected static array $instances = [];
 
+    /**
+     * Gets an object instance
+     * --------------------------
+     * Получает экземпляр объекта
+     *
+     * @return self
+     */
     public static function getInstance(): self
     {
         $that = get_called_class();
